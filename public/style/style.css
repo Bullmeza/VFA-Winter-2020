@@ -1,0 +1,129 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    scroll-behavior: smooth;
+    font-family: Georgia;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.paral {
+    min-height: 95vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.filter {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+
+
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+    position: absolute;
+    z-index: 10;
+    bottom: -6vw;
+}
+
+#NextNavBar:hover {
+    font-weight: bolder;
+}
+
+
+/* VIDS */
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+.video-credits {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.video-credits iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+	height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+/* COMPUTER */
+
+@media (min-aspect-ratio: 16/9) {
+    .video-background iframe {
+        height: 56.25vw;
+        margin-top: -5vh;
+        position: absolute;
+        background-color: black;
+    }
+    #start {
+        position: absolute;
+        top: 40vh;
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+    }
+    #iconcontainer{
+       position: absolute; 
+       top:20vh;
+    }
+    .responsiveimg {
+        position: relative;
+        height: 60vh;   
+        max-width: 30%;
+        margin-left: 35%;
+    }
+}
+
+
+/* PHONE */
+
+@media (max-aspect-ratio: 16/9) {
+    .video-background iframe {
+        width: 177.78vh;
+    }
+    #start {
+        position: absolute;
+        top: 40vh;
+        width: 100%;
+        font-size: 2.2em;
+        text-align: center;
+    }
+    #iconcontainer{
+        position: absolute; 
+        top:30vh;
+     }
+     .responsiveimg {
+        position: relative;
+        height: 50vh;   
+        max-width: 100%;
+    }
+    .player_div{
+        margin-left: -20px;
+    }
+}
+

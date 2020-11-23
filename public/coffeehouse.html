@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+
+        <link rel="stylesheet" type="text/css" href="style/slideshow.css" />
+        <link rel="stylesheet" type="text/css" href="style/bottomnav.css" />
+        <link rel="stylesheet" type="text/css" href="style/hexnav.css" />
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <!--Animations-->
+        <link rel="stylesheet" href="style/animate.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+            />
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+
+
+        <!--Icons-->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+           <!--Font-->
+            <link href='https://fonts.googleapis.com/css?family=Montserrat'
+            rel='stylesheet'>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+        <title>CPC's Virtual Festival of Arts, Music and Technology</title>
+        <link rel="icon" href="img/logo/tree_blue.png" type="image/gif">
+        <link rel="shortcut icon" type="image/x-icon"
+            href="img/logo/tree_blue.png" />
+        <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+		
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="pause.js"></script>
+
+
+    </head>
+
+    <style>
+    body {
+        overflow: hidden;
+    }
+    
+    .audiojs {
+        position: relative;
+        width: 100%;
+    }
+	    
+
+    @media (min-aspect-ratio: 16/9) {
+            #wrap {
+                transform: scale(0.6);
+                top: 0;
+                right: 0;
+            }
+            #menu {
+                transform: scale(0.1);
+                top: 0;
+                right: 0;
+            }
+            .rotate {
+        animation: turn 7s linear infinite;
+             }
+    
+          @keyframes turn {
+             to {
+            transform: rotate(360deg);
+             }
+            }
+        }
+        
+        @media (max-aspect-ratio: 16/9) {
+            #wrap {
+                transform: scale(0.4);
+                top: -20px;
+                right: -40px;
+            }
+            #menu {
+                transform: scale(0.1);
+                top: -20px;
+                right: -40px;
+            }
+            .rotate {
+        animation: turn 7s linear infinite;
+      }
+    
+     @keyframes turn {
+        to {
+            transform: rotate(360deg) scale(0.5);
+            }
+     }
+     .player_div{
+         transform: scale(0.5) translate(-35%,-50%);
+     }
+        }
+		        .plyr{
+            --plyr-audio-controls-background:#343a40;
+            --plyr-audio-control-color: white;
+            --plyr-color-main: #002d72;
+        }
+</style>
+    <body>
+
+
+<!--intro id-->
+
+        <div class="video-background vimeo" id="vid1">
+            <iframe
+                class="vimeo"
+                id="intro_vid"
+                src="https://player.vimeo.com/video/420125842?autoplay=1&loop=0&autopause=0"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="bottom" onclick="pause()" >
+            <a href="#title0">
+                <div class="wrapper" style="margin-top: 8vh;">
+                    <div class="toggle">
+                        <i class="material-icons" id="char">keyboard_arrow_down</i>
+						<h1 class="slide_text">Next Block</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!--Sierra-->
+
+
+        <div id="title0" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“Grad” written and performed by Sierra Little</h1>
+                <p class="paragraph">
+If you haven’t had the chance to hear Grade 12 grad Sierra Little perform, then you are in for a treat! In the following clip, Sierra sings and performs her song "Grad,” an original piece composed in quarantine. In it, Sierra laments missing her final days at CPC.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshowk"
+                        class="vimeo" style="width: 100%;
+                        height:
+                        100%" src="https://player.vimeo.com/video/420907155"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#vid1">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title1">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Casper's theremin 1-->
+
+        <div id="title1" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:25vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">Casper's Theremin</h1>
+                <p class="paragraph">Grade 10 student Casper Yang has an insatiable thirst to learn everything engineering-related. In this clip, Casper walks us through a recent project where he used some simple components connected to the Arduino UNO to create a Theremin-inspired instrument.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 75vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe class="vimeo" style="width: 100%;
+                        height: 100%"
+                        src="https://player.vimeo.com/video/420088206"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title0">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title8">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Amy & Andrianna-->
+
+        <div id="title8" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“prom dress” performed by Amy and Andrianna</h1>
+                <p class="paragraph">What a dynamic duo! In addition to being prefects and rocking in CPC’s Rock Band together, Grade 8 students Amy McCulloch and Andrianna Ellinidis found time to put together a virtual duet. In this recent recording performed by the pair, Amy and Andrianna cover the song “prom dress” by mxmtoon.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe class="vimeo animate__animated"
+                        style="width: 100%; height: 100%"
+                        src="https://player.vimeo.com/video/421080953"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title1">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title2">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--CPC Rockband-->
+
+
+        <div id="title2" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“Wish You Were Here” performed by CPC's Rock Band</h1>
+                <p class="paragraph">Distance is no obstacle for this group of passionate and eager musicians. In this video, you will get to see Crestwood’s first virtual rock band jam session led by our very own Mr. Major. Check out their rendition of “Wish You Were Here” by Pink Flyod!
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe  class="vimeo"
+                        style="width: 100%; height: 100%"
+                        src="https://player.vimeo.com/video/420140290"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title8">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title3">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Evan Prosserman-->
+
+
+        <div id="title3" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“Beer Barrel Boogie” performed by Evan Prosserman</h1>
+                <p class="paragraph">Grade 9 student Evan Prosserman is not only an outstanding scholar, ice-skater and roboticist, he is also quite the pianist! In this video below you will find Evan's beautiful rendition of Billy Taylor’s “Beer Barrel Boogie.” What a performance!
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe class="vimeo"
+                        style="width: 100%; height: 100%"
+                        src="https://player.vimeo.com/video/420904416"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title2">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title4">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Lean on Me Herbert Major-->
+        <div id="title4" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“Lean On Me” performed by Mr. Herbert and Mr. Major</h1>
+                <p class="paragraph">In these uncertain times, sometimes you just need somebody to lean on… virtually, of course! In this clip, teachers Mr. Herbert and Mr. Major perform “Lean on Me” by Bill Withers. 
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container-fluid w-75" style="height: 70vh;">
+                <div class="row">
+                    <div class="col p-1">
+                        <iframe class="vimeo"
+                            src="https://player.vimeo.com/video/422508275"
+                            style="width: 100%; height: 100%;" frameborder="0"
+                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <div class="col p-1">
+                        <div style="width: 450px; height: auto; position:
+                            relative;"
+                            class="player_div">
+                            <img src="img/player.png" style="height: 100%;width:
+                                100%; position: relative; top: 0; z-index: 2;">
+                            <img src="img/logo/ctreerecord.png"
+                                class="audio_player" style="width: 340px;
+                                height: 340px; z-index: -1; border-radius: 50%;
+                                position: absolute; top: 0px; left: 5px;">
+                            <audio class="plyr" controls>
+                                <source src="audio/leanonme.mp3"
+                                    type="audio/mp3" />
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="up" onclick="pause()">
+                <a href="#title3">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_up</i>
+							<h1 class="slide_text">Prev. Block</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bottom" onclick="pause()">
+                <a href="#title5">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_down</i>
+							<h1 class="slide_text">Next Block</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Steve Lazar-->
+
+
+        <div id="title5" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">"Fairies Wear Boots" performed by Steve Lazar</h1>
+                <p class="paragraph">Steven Lazar is perhaps best known for lighting up a basketball court, but did you know that he can light up a guitar, as well? In this clip, this Grade 12 grad plays “Fairies Wear Boots” by Black Sabbath.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe class="animate__animated vimeo"
+                        style="width: 100%; height: 100%"
+                        src="https://player.vimeo.com/video/420883498"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title4">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title6">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jay Lu-->
+
+
+        <div id="title6" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“Flight of a Bumblebee” performed by Jay Lu</h1>
+                <p class="paragraph">In addition to being an outstanding prefect, Grade 10 student Jay Lu is also a volleyball player and is actively involved in Chess club, Crestwood Voices and was part of CPC's March Break volunteering trip in Kenya. Below you will find his iteration of “Flight of the Bumblebee” by Sergey Rachmaninoff.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshowj" class="animate__animated vimeo"
+                        style="width: 100%; height: 100%"
+                        src="https://player.vimeo.com/video/420423716"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title5">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title7">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crestwood Voices Amazing Grace-->
+
+
+        <div id="title7" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“Amazing Grace” performed by Members of Crestwood Voices</h1>
+                <p class="paragraph">In this clip, Mr. Jull is virtually joined by Selina Zhao, Grade 12, and Jay Lu, Grade 10, of the Crestwood Voices in a mesmerizing rendition of the classic “Amazing Grace.” Enjoy!
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container-fluid w-75" style="height: 70vh;">
+                                <div class="row">
+                    <div class="col p-1">
+                        <iframe class="vimeo"
+                            src="https://player.vimeo.com/video/420843677"
+                            style="width: 100%; height: 100%;" frameborder="0"
+                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <div class="col p-1">
+                        <div style="width: 450px; height: auto; position:
+                            relative;"
+                            class="player_div">
+                            <img src="img/player.png" style="height: 100%;width:
+                                100%; position: relative; top: 0; z-index: 2;">
+                            <img src="img/logo/ctreerecord.png"
+                                class="audio_player" style="width: 340px;
+                                height: 340px; z-index: -1; border-radius: 50%;
+                                position: absolute; top: 0px; left: 5px;">
+                            <audio class="plyr" controls>
+                                <source src="audio/amazinggrace.mp3"
+                                    type="audio/mp3" />
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="up" onclick="pause()">
+                <a href="#title6">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_up</i>
+							<h1 class="slide_text">Prev. Block</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bottom" onclick="pause()">
+                <a href="#title9">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_down</i>
+							<h1 class="slide_text">Next Block</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="title9" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">‘Poetry in Voice’ Finalists’ Recitations  </h1>
+                <p class="paragraph">Last February, Crestwood had the pleasure of watching the Grade 9 “Poetry in Voice” finalists recite their poems before a gathering of parents, teachers and friends. Here are a few clips of the event, featuring recitations by Tal Shram, Evan Prosserman, Madelyn Tuns and Ioanna Michelis.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshow0" class="animate__animated vimeo"
+                        style="width: 100%; height: 100%"
+                        src="https://player.vimeo.com/video/422886022"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title10">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title7">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="left" onclick="left(0)">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_left</i>
+							<h1 class="slide_text">Prev. Clip</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="right" onclick="right(0)">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_right</i>
+							<h1 class="slide_text">Next Clip</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+		<!-- digital art club creations-->
+		        <div id="title10" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">Digital Art Club Creations</h1>
+                <p class="paragraph">The Digital Art club has spent this year dedicated to exploring new media and tools for creating art. During quarantine, our students have had more time to create pieces that they are interested in: From short pixel animations, to digital paintings, 3D work and painting timelapses, the members of the digital art club are excited to showcase their explorations to you.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshow1" class="animate__animated vimeo"
+                        style="width: 100%; height: 100%"
+                        src="https://player.vimeo.com/video/424990659"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title10">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="up" onclick="pause()">
+                    <a href="#title9">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_up</i>
+								<h1 class="slide_text">Prev. Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="left" onclick="left(1)">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_left</i>
+							<h1 class="slide_text">Prev. Clip</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="right" onclick="right(1)">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_right</i>
+							<h1 class="slide_text">Next Clip</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Kyle Gerudo-->
+        <div id="title10" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">“Gerudo Valley” performed by Kyle Yep</h1>
+                <p class="paragraph">Here’s a tune that might sound familiar to some of you! In the following clip, Grade 9 student Kyle Yep treats us to a piano performance of “Gerudo Valley” from the Nintendo video game series, “The Legend of Zelda,” originally composed by Koji Kondo. Kyle also showcases an original illustration he created to accompany the piece. 
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container-fluid w-75" style="height: 70vh;">
+                <div class="row">
+                    <div class="col p-1">
+                        <iframe class="vimeo"
+                            src="https://player.vimeo.com/video/422270166"
+                            style="width: 100%; height: 100%;" frameborder="0"
+                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <div class="col p-1">
+                        <div style="width: 450px; height: auto; position:
+                            relative;"
+                            class="player_div">
+                            <img src="img/player.png" style="height: 100%;width:
+                                100%; position: relative; top: 0; z-index: 2;">
+                            <img src="img/logo/ctreerecord.png"
+                                class="audio_player" style="width: 340px;
+                                height: 340px; z-index: -1; border-radius: 50%;
+                                position: absolute; top: 0px; left: 5px;">
+                            <audio class="plyr" controls>
+                                <source src="audio/gerudokyle.mp3"
+                                    type="audio/mp3" />
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="up" onclick="pause()">
+                <a href="#title19">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_up</i>
+							<h1 class="slide_text">Prev. Block</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title11">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+		
+		
+        <!--Letham-->
+        <div id="title11" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:25vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">Ms. Letham’s Lighthouse</h1>
+                <p class="paragraph">Although Ms. Letham is a Math and Science teacher here at CPC, she loves to paint and colour in her spare time. She finds artistic inspiration from her travels. In particular, Ms. Letham loves visiting lighthouses around the world, and this art piece depicts one of her all time favourites. 
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container-fluid w-75" style="height: 75vh;">
+                        <img src="img/letham.jpg" alt="Ms. Letham's Lighthouse" class="responsiveimg">
+            </div>
+            <div class="up" onclick="pause()">
+                <a href="#title10">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_arrow_up</i>
+							<h1 class="slide_text">Prev. Block</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bottom" onclick="pause()">
+                <a href="#vid1">
+                    <div class="wrapper">
+                        <div class="toggle">
+                            <i class="material-icons" id="char">keyboard_capslock</i>
+							<h1 class="slide_text">Start Again</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+ <!--NAV-->
+        <div id="wrap" class="wrapper">
+            <div class="toggle" id="toggle" onclick="expand()">
+                <i class="material-icons" id="add">add</i>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <div class="item">
+                <a href="home.html">
+                    <img src="img/logo/home.png" class="icon">
+                </a>
+                <h1 class="item_text" style="margin-top: -25px;">Home</h1>
+            </div>
+            <div class="item">
+                <a href="music.html">
+                    <img src="img/logo/music.png" class="icon">
+                    <h1 class="item_text">Music</h1>
+                </a>
+            </div>
+            <div class="item">
+                <a href="drama.html">
+                    <img src="img/logo/drama.png" class="icon">
+                    <h1 class="item_text">Drama</h1>
+                </a>
+            </div>
+            <div class="item item_active">
+                <a href="coffeehouse.html">
+                    <img src="img/logo/coffeehouse.png" class="icon">
+                    <h1 class="item_text" style="margin-top: -50px;">Coffee
+                        House
+                    </h1>
+                </a>
+            </div>
+            <div class="item">
+                <a href="tech.html">
+                    <img src="img/logo/comp.png" class="icon">
+                    <h1 class="item_text">Tech</h1>
+                </a>
+            </div>
+            <div class="item">
+                <a href="art.html">
+                    <img src="img/logo/art.png" class="icon">
+                    <h1 class="item_text">Art</h1>
+                </a>
+            </div>
+        </div>
+        </div>
+        <script>
+        let open = false;
+        let i = document.getElementById("menu").childNodes;
+
+        let zoom = 0.8;
+        let zoom_original = 0.4;
+        let translateX = "-42.5vw";
+        let translateY = "40vh";
+
+        if (window.innerWidth > 799) {
+            zoom = 1.2;
+            zoom_original = 0.6;
+            translateX = "-46vw";
+            translateY = "42.5vh";
+        }
+
+        function expand() {
+            if (!open) {
+                document.getElementById("add").style.transform = 'rotate(45deg)';
+
+                document.getElementById("wrap").style.transform = 'translate(' + translateX + ',' + translateY + ') scale(' + zoom + ')';
+                document.getElementById("menu").style.transform = 'translate(' + translateX + ',' + translateY + ') scale(' + zoom + ')';
+                open = true;
+
+                i[1].style.transform = 'translateY(-160px)';
+                i[3].style.transform = 'translate(140px, -80px)';
+                i[5].style.transform = 'translate(140px,80px)';
+                i[7].style.transform = 'translateY(160px)';
+                i[9].style.transform = 'translate(-140px,80px)';
+                i[11].style.transform = 'translate(-140px,-80px)';
+
+            } else {
+                document.getElementById("add").style.transform = 'rotate(0deg)';
+                document.getElementById("menu").style.transform = 'scale(0.1)'
+                document.getElementById("wrap").style.transform = 'scale(' + zoom_original + ')';
+                open = false;
+                i[1].style.transform = 'translateY(0)';
+                i[3].style.transform = 'translate(0)';
+                i[5].style.transform = 'translate(0)';
+                i[7].style.transform = 'translateY(0)';
+                i[9].style.transform = 'translate(0)';
+                i[11].style.transform = 'translate(0)';
+
+            }
+        }
+    </script>
+        <footer id="navbar" class="footer fixed-bottom bg-dark"
+            style="max-height: 6vh; display: none;">
+            <div class="container-fluid m-0 p-0 text-center">
+                <a href="https://www.crestwood.on.ca/">
+                    <div class="float-left p-2">
+                        <img src="img/white_logo.png" id="crestwood_logo">
+                    </div>
+                </a>
+                <div id="motto" class="float-left text-center w-75 p-3
+                    text-white">
+                    <h1 style="font-size: 2.75vh; font-family: Georgia;">
+                        &#10240;&#10240;&#10240;&#10240;&#10240;&#10240;Inspire
+                        Excellence &centerdot; Nurture Individuality
+                    </h1>
+                </div>
+                <a href="https://www.instagram.com/crestwoodpreparatory/?hl=en">
+                    <div class="float-right filter">
+                        <img src="img/logo/instagram.png" class="nav_icon">
+                    </div>
+                </a>
+                <a
+                    href="https://twitter.com/CrestwoodPrep?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <div class="float-right filter">
+                        <img src="img/logo/twitter.png" class="nav_icon">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/crestwoodprep/">
+                    <div class="float-right filter">
+                        <img src="img/logo/facebook.png" class="nav_icon">
+                    </div>
+                </a>
+                <a
+                    href="https://www.youtube.com/channel/UCN87TNFRqdktIhuTMVZmwLQ">
+                    <div class="float-right filter">
+                        <img src="img/logo/youtube.png" class="nav_icon">
+                    </div>
+                </a>
+                <a href="credits.html">
+                    <div class="float-right filter">
+                        <img src="img/logo/star.png" class="nav_icon">
+                    </div>
+                </a>
+            </div>
+        </footer>
+
+        <script>
+        window.onscroll = function() {
+            if (window.location.hash.includes("title")) {
+                document.getElementById("navbar").style.display = "block";
+            } else {
+                document.getElementById("navbar").style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        window.onscroll = function() {
+            if (window.location.hash.includes("title")) {
+                document.getElementById("navbar").style.display = "block";
+            } else {
+                document.getElementById("navbar").style.display = "none";
+            }
+        }
+        var slides = [
+            ["https://player.vimeo.com/video/422886022", "https://player.vimeo.com/video/422855469", "https://player.vimeo.com/video/422854405", "https://player.vimeo.com/video/422855051", "https://player.vimeo.com/video/422855309", "https://player.vimeo.com/video/422854182", "https://player.vimeo.com/video/422855888", "https://player.vimeo.com/video/422856209","https://player.vimeo.com/video/422856501", "https://player.vimeo.com/video/422855740"],
+			["https://player.vimeo.com/video/424990659","https://player.vimeo.com/video/424899085","https://player.vimeo.com/video/424901257","https://player.vimeo.com/video/424898997"],
+			[]
+        ];
+        var current = [0, 0, 0, 0, 0];
+
+        function right(num) {
+            document.getElementById("slideshow" + num).classList.add("animate__backOutRight");
+            setTimeout(function fade() {
+                document.getElementById("slideshow" + num).classList.remove("animate__backOutRight");
+            }, 800);
+            setTimeout(function updateRight() {
+                if (current[num] != slides[num].length - 1) {
+                    document.getElementById("slideshow" + num).src = slides[num][current[num] + 1];
+                    current[num] += 1;
+                } else {
+                    document.getElementById("slideshow" + num).src = slides[num][0];
+                    current[num] = 0;
+                }
+            }, 500);
+        }
+
+        function left(num) {
+            document.getElementById("slideshow" + num).classList.add("animate__backOutLeft");
+            setTimeout(function fade() {
+                document.getElementById("slideshow" + num).classList.remove("animate__backOutLeft");
+            }, 800);
+            setTimeout(function updateLeft() {
+                if (current[num] != 0) {
+                    document.getElementById("slideshow" + num).src = slides[num][current[num] - 1];
+                    current[num] -= 1;
+                } else {
+                    document.getElementById("slideshow" + num).src = slides[num][slides[num].length - 1];
+                    current[num] = slides[num].length - 1;
+                }
+            }, 500);
+        }
+    </script>
+        <script>
+        var slides_img = [
+            ["img/music/2.JPG","img/music/3.JPG","img/music/4.JPG","img/music/5.JPG","img/music/6.JPG","img/music/7.JPG","img/music/8.JPG","img/music/9.JPG","img/music/10.JPG","img/music/11.JPG","img/music/12.JPG","img/music/13.JPG","img/music/14.JPG","img/music/15.JPG","img/music/16.JPG","img/music/17.JPG","img/music/18.JPG","img/music/19.JPG","img/music/20.JPG","img/music/21.JPG","img/music/22.JPG"]
+        ];
+        var current_img = [0, 0, 0, 0, 0];
+
+        var auto = setInterval("right_img(0)", 3000);
+        
+
+        function right_img(num) {
+            clearInterval(auto);
+            document.getElementById("img_slideshow" + num).classList.add("animate__backOutRight");
+            setTimeout(function fade() {
+                document.getElementById("img_slideshow" + num).classList.remove("animate__backOutRight");
+            }, 800);
+            setTimeout(function updateRight_img() {
+                if (current_img[num] != slides_img[num].length - 1) {
+                    document.getElementById("img_slideshow" + num).style.backgroundImage = "url('" + slides_img[num][current_img[num] + 1] + "')";
+                    current_img[num] += 1;
+                } else {
+                    document.getElementById("img_slideshow" + num).style.backgroundImage = "url('" + slides_img[num][0] + "')";
+                    current_img[num] = 0;
+                }
+            }, 20);
+            auto = setInterval("right_img(0)", 6000);
+        }
+
+        function left_img(num) {
+            clearInterval(auto);
+            document.getElementById("img_slideshow" + num).classList.add("animate__backOutLeft");
+            setTimeout(function fade() {
+                document.getElementById("img_slideshow" + num).classList.remove("animate__backOutLeft");
+            }, 800);
+            setTimeout(function updateLeft_img() {
+                if (current_img[num] != 0) {
+                    document.getElementById("img_slideshow" + num).style.backgroundImage = "url('" + slides_img[num][current_img[num] - 1] + "')";
+                    current_img[num] -= 1;
+                } else {
+                    document.getElementById("img_slideshow" + num).style.backgroundImage = "url('" + slides_img[num][slides_img[num].length - 1] + "')";
+                    current_img[num] = slides_img[num].length - 1;
+                }
+            }, 20);
+            auto = setInterval("left_img(0)", 6000);
+        }
+        
+    </script>
+    </body>
+
+
+</html>

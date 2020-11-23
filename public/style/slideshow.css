@@ -1,0 +1,155 @@
+#right:hover {
+    filter: invert(20%);
+}
+
+.right:hover #char,
+.left:hover #char,
+.bottom:hover #char,
+.up:hover #char{
+    opacity: 0.1;
+}
+
+
+#right {
+    width: 160px;
+    height: 140px;
+    left: calc(50vw - 80px);
+    bottom: 20vh;
+    position: absolute;
+    transform: scale(0.6);
+}
+
+.right {
+    width: 160px;
+    height: 140px;
+    right: 0;
+    bottom: 50vh;
+    position: absolute;
+}
+
+.left {
+    width: 160px;
+    height: 140px;
+    left: 0;
+    bottom: 50vh;
+    position: absolute;
+}
+
+.bottom {
+    width: 160px;
+    height: 140px;
+    bottom: 7vh;
+    right: 0;
+    position: absolute;
+}
+
+.up {
+    width: 160px;
+    height: 140px;
+    bottom: calc(8vh + 80px);
+    right: 0;
+    position: absolute;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .right,
+    .left,
+    .bottom,
+    .up {
+        transform: scale(0.6);
+    }
+    #up {
+        bottom: 7vh;
+        right: 0;
+        position: fixed;
+        width: 160px;
+        height: 140px;
+        transform: scale(0.6);
+    }
+}
+
+
+/* PHONE */
+
+@media (max-aspect-ratio: 16/9) {
+    #up {
+        bottom: 7vh;
+        right: -40px;
+        position: fixed;
+        width: 160px;
+        height: 140px;
+        transform: scale(0.6);
+    }
+    .bottom,
+    .up,
+    .right {
+        transform: scale(0.4);
+        right: -40px;
+    }
+    .left {
+        transform: scale(0.4);
+        left: -40px;
+    }
+    .left,
+    .right{
+        bottom: 40vh;
+    }
+    #right {
+        transform: scale(0.4);
+        width: 160px;
+        height: 140px;
+        right: calc(50vw + 80px);
+        bottom: 25vh;
+        position: absolute;
+    }
+    .up {
+        width: 160px;
+        height: 140px;
+        bottom: calc(8vh + 56px);
+        right: -40px;
+        position: absolute;
+    }
+}
+
+/*Large*/
+@media (min-width:1950px) {
+    .title {
+        font-size: 25px;
+    }
+    .paragraph {
+        font-size: 15px;
+    }
+  }
+
+  /*Our*/
+@media (max-width:1950px) {
+    .title {
+        font-size: 30px;
+    }
+    .paragraph {
+        font-size: 19px;
+    }
+  }
+
+  /*Tablet*/
+@media (max-width:1199px) {
+    .title {
+        font-size: 30px;
+    }
+    .paragraph {
+        font-size: 17.5px;
+    }
+  }
+
+  /*PHONE*/
+  @media (max-width:850px) {
+    .title {
+        font-size: 22.5px;
+    }
+    .paragraph {
+        font-size: 10px;
+    }
+  }
+  
+ 
+ 
