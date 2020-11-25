@@ -1,3 +1,9 @@
+:root {
+    --main: #f7931e;
+    --second: blue;
+
+} 
+
 .wrapper,
 .menu {
     height: 140px;
@@ -20,7 +26,7 @@
 .toggle {
     height: 0;
     width: 80px;
-    border-bottom: 70px solid #002d72;
+    border-bottom: 70px solid var(--main);
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     position: absolute;
@@ -32,7 +38,7 @@
     content: "";
     height: 0;
     width: 80px;
-    border-top: 70px solid #002d72;
+    border-top: 70px solid var(--main);
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     position: absolute;
@@ -69,7 +75,7 @@
 #add,
 #char {
     font-size: 100px;
-    color: white;
+    color: black;
     position: relative;
     top: 20px;
     right: 10px;
@@ -82,13 +88,13 @@
 }
 
 #char{
-    background-color: #002d72;
+    background-color: var(--main);
     z-index: 10;
 }
 
 .arrow_icon {
     font-size: 100px;
-    color: white;
+    color: black;
     position: relative;
     top: 20px;
     right: 10px;
@@ -139,7 +145,7 @@
     font-size: 30px;
     position: absolute;
     margin-top: -75px;
-    color: white;
+    color: black;
     z-index: 5;
     width: 100%;
     text-align: center;
