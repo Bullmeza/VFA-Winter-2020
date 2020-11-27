@@ -47,6 +47,17 @@ body {
     width: 100vw;
     height: 100vh;
 }
+#top {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .video-background iframe {
     position: absolute;
@@ -97,6 +108,9 @@ body {
         max-width: 30%;
         margin-left: 35%;
     }
+    #top{
+        transform: scale(1.75);
+    }
 }
 
 
@@ -125,41 +139,12 @@ body {
     .player_div{
         margin-left: -20px;
     }
-}
-
-#canv{
-    position: fixed;
-    right: 0;
-    bottom: 8vh;
-    text-align: center;
-    z-index: 10;
-}
-
-.item_text2 {
-    font-size: 1.25em;
-    position: absolute;
-    margin-top: -50px;
-    margin-left: -10px;
-    color: black;
-    z-index: 100;
-    width: 100%;
-    text-align: center;
-    font-family: Georgia;
-    font-weight: 900;
-    display: none;
-}
-
-#canv:hover i{
-    opacity: 0.4;
-    filter: blur(2px);
-
+    #top{
+        transform: scale(1);
+    }
 }
 
 
-#canv:hover .item_text2{
-    display: block;
-    opacity: 0.95;
-}
 
 
 

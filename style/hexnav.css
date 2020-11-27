@@ -153,6 +153,18 @@
     font-weight: 600;
 }
 
+.big_text{
+    font-size: 22px;
+    position: absolute;
+    margin-top: -55px;
+    color: black;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
 
 /* ACTIVE */
 
@@ -179,4 +191,14 @@
    .item{
     transform: scale(0.6);
    }
+}
+
+
+.bigWrap{
+    height: 140px;
+    width: 160px;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    margin: 50px;
 }

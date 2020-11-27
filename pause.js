@@ -50,7 +50,7 @@ $(document).ready(function () {
 });
 window.onscroll = function () {
     if (window.location.hash.includes("title")) {
-        document.getElementById("navbar").style.display = "block";
+
 
         for (var a = 0; a < lefts.length; a++) {
             lefts[a].classList.add("animate__animated", "animate__flash", "animate__delay-2s", "animate__slow");
@@ -66,8 +66,6 @@ window.onscroll = function () {
                 rights[b].classList.remove("animate__animated", "animate__flash", "animate__delay-2s", "animate__slow");
             }
         }, 5000);
-    } else {
-        document.getElementById("navbar").style.display = "none";
     }
 }
 

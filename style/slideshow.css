@@ -5,9 +5,11 @@
 .right:hover #char,
 .left:hover #char,
 .bottom:hover #char,
-.up:hover #char{
+.up:hover #char,
+.bigWrap:hover #char{
     opacity: 0.1;
 }
+
 
 
 #right {
