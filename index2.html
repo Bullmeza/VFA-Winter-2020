@@ -41,8 +41,9 @@
         body {
             background-color: #343a40;
             overflow: hidden;
-            font-family: Georgia;
+            font-family: Georgia; 
         }
+        
     </style>
         <div id="carouselIndicators" class="carousel slide"
             data-ride="carousel">
@@ -99,11 +100,10 @@
             </div>
         </div>
 
-
         <div id="iconcontainer" class="container-fluid text-center text-white
             fadeIn">
             <div class="container p-3" style="background-color:
-                rgba(255,255,255,0.6); color: #002d72;">
+                rgba(255,255,255,0.6);">
                 <img src="img/logo/I1.png" width="100%" class="animated
                     slideInLeft slow delay-1s">
                 <img src="img/logo/I2.png" width="100%" class="animated
@@ -112,17 +112,20 @@
                     slideInLeft slow delay-1s">
                 <img src="img/logo/I4.png" width="100%" class="animated
                     slideInRight slow delay-1s">
-                <hr style="border: 2px solid #002d72;">
-                <h1 id="timer" style="font-size: 45px; padding: 5px;
-                    font-family: 'Montserrat'; font-weight: 550;">
-                    Time Until Launch
-                </h1>
             </div>
         </div>
 
+        <div id="right">
+            <a href="home.html">
+                <div class="wrapper">
+                    <div class="toggle">
+                        <i class="material-icons" id="add">keyboard_arrow_right</i>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-        <footer class="footer fixed-bottom bg-dark" style="max-height:
-            6vh;">
+        <footer class="footer fixed-bottom bg-dark" style="max-height: 6vh;">
             <div class="container-fluid m-0 p-0 text-center">
                 <a href="https://www.crestwood.on.ca/">
                     <div class="float-left p-2">
@@ -136,8 +139,7 @@
                         Excellence &centerdot; Nurture Individuality
                     </h1>
                 </div>
-                <a
-                    href="https://www.instagram.com/crestwoodpreparatory/?hl=en">
+                <a href="https://www.instagram.com/crestwoodpreparatory/?hl=en">
                     <div class="float-right filter">
                         <img src="img/logo/instagram.png" class="nav_icon">
                     </div>
@@ -166,30 +168,12 @@
                 </a>
             </div>
         </footer>
+
+
         <script>
         $('.carousel').carousel({
             interval: 3500
         })
-    </script>
-        <script>
-    var countDownDate = new Date("Jun 9, 2020 19:00:00").getTime();
-    var countdownfunction = setInterval(function() {
-    var now = new Date().getTime();
-      
-    var distance = countDownDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-      
-      if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
     </script>
     </body>
 
