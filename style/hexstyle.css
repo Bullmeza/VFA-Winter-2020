@@ -1,9 +1,10 @@
 :root{
     --main: #f7931e;
-    --second: #2e3192;
-    --other: #2e3192;
-    --shade: white;
+    --second: white;
+    --shade: black;
 }
+
+
 
 /* COMPUTER */
 
@@ -175,11 +176,11 @@ a>.material-icons {
 /* ACTIVE */
 
 .item_active {
-    border-bottom: 70px solid var(--other);
+    border-bottom: 70px solid var(--second);
 }
 
 .item_active:before {
-    border-top: 70px solid var(--other);
+    border-top: 70px solid var(--second);
 }
 
 .item_active>a>img,

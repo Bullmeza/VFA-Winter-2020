@@ -101,7 +101,7 @@ body {
     }
     #iconcontainer{
        position: absolute; 
-       top:20vh;
+       top:10vh;
     }
     .responsiveimg {
         position: relative;

@@ -4,6 +4,19 @@
 
 } 
 
+
+#blurback{
+    background: black;
+    opacity: 0.70; /* CHANGE THIS */
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
 .wrapper,
 .menu {
     height: 140px;

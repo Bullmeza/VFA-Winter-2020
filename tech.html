@@ -34,6 +34,12 @@
          background-color: #d3d3d3;
          overflow: hidden;
          }
+         #top{
+             background-image: url("img/Tech/1.jpg"); 
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+         }
          /* HEXNAV */
          @media (min-aspect-ratio: 16/9) {
          #wrap {
@@ -60,6 +66,10 @@
          }
          }
       </style>
+      <div id = "blurback">
+
+      </div>
+
       <div id="top">
         <div class="row">
         <a href="#title0">
@@ -333,6 +343,7 @@
          
          function expand() {
              if (!open) {
+                 document.getElementById("blurback").style.display = 'block';
                  document.getElementById("add").style.transform = 'rotate(45deg)';
          
                  document.getElementById("wrap").style.transform = 'translate(' + translateX + ',' + translateY + ') scale(' + zoom + ')';
@@ -352,6 +363,7 @@
                  }
          
              } else {
+                document.getElementById("blurback").style.display = 'none';
                  document.getElementById("add").style.transform = 'rotate(0deg)';
                  document.getElementById("menu").style.transform = 'scale(0.1)'
                  document.getElementById("wrap").style.transform = 'scale(' + zoom_original + ')';
