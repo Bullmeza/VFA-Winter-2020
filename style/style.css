@@ -108,15 +108,17 @@ body {
         font-size: 4em;
         text-align: center;
     }
-    #iconcontainer{
-       position: absolute; 
-       top:10vh;
-    }
     .responsiveimg {
         position: relative;
         height: 60vh;   
         max-width: 30%;
         margin-left: 35%;
+    }
+    #timer{
+        font-size: 45px;
+    }
+    #mid{
+        width: 55vw;
     }
     #top{
         transform: scale(1.75);
@@ -151,6 +153,12 @@ body {
     }
     #top{
         transform: scale(1);
+    }
+    #timer{
+        font-size: 45px;
+    }
+    #mid{
+        width: 90vw;
     }
 }
 
