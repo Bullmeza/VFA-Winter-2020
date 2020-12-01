@@ -151,6 +151,10 @@ a>.material-icons {
     filter: blur(2px);
 }
 
+.icon:hover + .item_text{
+  display: block;
+}
+
 .toggle>img {
     position: relative;
     width: 120%;
@@ -168,6 +172,7 @@ a>.material-icons {
     text-align: center;
     font-family: Georgia;
     font-weight: 900;
+    display: none;
 }
 
 
@@ -176,11 +181,11 @@ a>.material-icons {
 /* ACTIVE */
 
 .item_active {
-    border-bottom: 70px solid var(--second);
+    border-bottom: 70px solid #add8e6;
 }
 
 .item_active:before {
-    border-top: 70px solid var(--second);
+    border-top: 70px solid #add8e6;
 }
 
 .item_active>a>img,
@@ -188,7 +193,7 @@ a>.material-icons {
     position: relative;
     width: 100%;
     top: 15px;
-    background-color: var(--other);
+    background-color: #add8e6;
 }
 
 @media (max-width: 799px) {

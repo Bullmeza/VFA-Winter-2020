@@ -34,7 +34,7 @@
          background-color: #d3d3d3;
          overflow: hidden;
          }
-         #top{
+         #topimg{
              background-image: url("img/art/6.jpg"); 
              background-size: cover;
              background-position: center;
@@ -67,6 +67,8 @@
          }
          }
       </style>
+      <div id="blurback"></div>
+      <div id="topimg"></div>
       <div id="top">
         <div class="row">
             <a href="#title0">
@@ -286,44 +288,43 @@
          </div>
       </div>
       <div class="menu" id="menu">
-         <div class="item">
+        <div class="item">
             <a href="home.html">
-            <img src="img/logo/home.png" class="icon">
+                <img src="img/logo/home.png" class="icon">
+                <h1 class="item_text">Home</h1>
             </a>
-            <h1 class="item_text" style="margin-top: -25px;">Home</h1>
-         </div>
-         <div class="item">
+        </div>
+        <div class="item">
             <a href="music.html">
-               <img src="img/logo/music.png" class="icon">
-               <h1 class="item_text">Music</h1>
+                <img src="img/logo/music.png" class="icon">
+                <h1 class="item_text">Music</h1>
             </a>
-         </div>
-         <div class="item">
+        </div>
+        <div class="item">
             <a href="drama.html">
-               <img src="img/logo/drama.png" class="icon">
-               <h1 class="item_text">Drama</h1>
+                <img src="img/logo/drama.png" class="icon">
+                <h1 class="item_text">Drama</h1>
             </a>
-         </div>
-         <div class="item">
+        </div>
+        <div class="item">
             <a href="remembrance.html">
-               <img src="img/logo/poppy.svg" class="icon">
-               <h1 class="item_text" style="margin-top: -50px;">Remembrance
-               </h1>
+                <img src="img/logo/poppy.png" class="icon">
+                <h1 class="item_text" style="font-size: 1em; margin-left: -17px; margin-top: -32px;">Remembrance</h1>
             </a>
-         </div>
-         <div class="item item">
+        </div>
+        <div class="item">
             <a href="tech.html">
-               <img src="img/logo/comp.png" class="icon">
-               <h1 class="item_text">Tech</h1>
+                <img src="img/logo/comp.png" class="icon">
+                <h1 class="item_text">Tech</h1>
             </a>
-         </div>
-         <div class="item_active">
+        </div>
+        <div class="item item_active">
             <a href="art.html">
-               <img src="img/logo/art.png" class="icon">
-               <h1 class="item_text">Art</h1>
+                <img src="img/logo/art.png" class="icon">
+                <h1 class="item_text">Art</h1>
             </a>
-         </div>
-      </div>
+        </div>
+    </div>
       <script>
          let open = false;
          let i = document.getElementById("menu").childNodes;
@@ -356,6 +357,7 @@
          
          function expand() {
              if (!open) {
+                document.getElementById("blurback").style.display = 'block';
                  document.getElementById("add").style.transform = 'rotate(45deg)';
          
                  document.getElementById("wrap").style.transform = 'translate(' + translateX + ',' + translateY + ') scale(' + zoom + ')';
@@ -375,6 +377,7 @@
                  }
          
              } else {
+                document.getElementById("blurback").style.display = 'none';
                  document.getElementById("add").style.transform = 'rotate(0deg)';
                  document.getElementById("menu").style.transform = 'scale(0.1)'
                  document.getElementById("wrap").style.transform = 'scale(' + zoom_original + ')';

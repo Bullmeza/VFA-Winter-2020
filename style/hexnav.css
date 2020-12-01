@@ -157,7 +157,7 @@
 .slide_text {
     font-size: 30px;
     position: absolute;
-    margin-top: -75px;
+    margin-top: -55px;
     color: black;
     z-index: 5;
     width: 100%;
@@ -169,7 +169,7 @@
 .big_text{
     font-size: 22px;
     position: absolute;
-    margin-top: -55px;
+    margin-top: -65px;
     color: black;
     z-index: 5;
     width: 100%;
@@ -214,4 +214,13 @@
     margin: auto;
     cursor: pointer;
     margin: 50px;
+}
+
+
+.icon:hover + .item_text{
+    display: block;
+}
+
+.item_text{
+    display: none;
 }
