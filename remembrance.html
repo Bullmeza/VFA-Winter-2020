@@ -35,16 +35,18 @@
         <script src="pause.js"></script>
     </head>
 
+    <style>
+    body {
+        overflow: hidden;
+    }
+    
+    .audiojs {
+        position: relative;
+        width: 100%;
+    }
+	    
 
-    <body>
-        <style>
-        body {
-            background-color: #d3d3d3;
-            overflow: hidden;
-        }
-        /* HEXNAV */
-        
-        @media (min-width: 800px) {
+    @media (min-aspect-ratio: 16/9) {
             #wrap {
                 transform: scale(0.6);
                 top: 0;
@@ -55,9 +57,18 @@
                 top: 0;
                 right: 0;
             }
+            .rotate {
+        animation: turn 7s linear infinite;
+             }
+    
+          @keyframes turn {
+             to {
+            transform: rotate(360deg);
+             }
+            }
         }
         
-        @media (max-width: 799px) {
+        @media (max-aspect-ratio: 16/9) {
             #wrap {
                 transform: scale(0.4);
                 top: -20px;
@@ -68,50 +79,73 @@
                 top: -20px;
                 right: -40px;
             }
+            .rotate {
+        animation: turn 7s linear infinite;
+      }
+    
+     @keyframes turn {
+        to {
+            transform: rotate(360deg) scale(0.5);
+            }
+     }
+     .player_div{
+         transform: scale(0.5) translate(-35%,-50%);
+     }
         }
-    </style>
-	
-	   <div id = "blurback">
+		        .plyr{
+            --plyr-audio-controls-background:#343a40;
+            --plyr-audio-control-color: white;
+            --plyr-color-main: #002d72;
+        }
+</style>
+      <div id = "blurback">
 
       </div>
-        <div class="video-background" id="vid1">
+
+
+
+
+    <body>
+
+
+<!--intro id-->
+
+        <div class="video-background vimeo" id="vid1">
             <iframe
                 class="vimeo"
                 id="intro_vid"
-                src="https://player.vimeo.com/video/420840030?autoplay=1&loop=0&autopause=0"
+                src="https://player.vimeo.com/video/485764303?autoplay=1&loop=0&autopause=0"
                 frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <div class="bottom" onclick="pause()">
-                <a href="#title0">
-                    <div class="wrapper" style="margin-top: 8vh;">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_down</i>
-							<h1 class="slide_text">Next Block</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
         </div>
-
-
-        <!--Grade 7 Drama block-->
-
+        <div class="bottom" onclick="pause()" >
+            <a href="#title0">
+                <div class="wrapper" style="margin-top: 8vh;">
+                    <div class="toggle">
+                        <i class="material-icons" id="char">keyboard_arrow_down</i>
+						<h1 class="slide_text">Next Block</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+		
+		<!--Remembrance Video 2020-->
         <div id="title0" class="jumbotron text-white bg-dark mt-0 pt-0"
             style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
             calc(100% - 10vh));">
             <div class="container p-2">
-                <h1 class="title">Grade 7 Drama Movement Projects</h1>
-                <p class="paragraph"> Here are a few awesome drama clips performed by the Grade 7 drama class. Students had the opportunity to perform either a “mannequin challenge” or a “frozen tableau picture task.” Enjoy!
-
-                </p>
+                <h1 class="title">Remembrance Day Virtual Assembly 2020</h1>
+                <p class="paragraph">NEED DESCRIPTION HERE                </p>
             </div>
         </div>
+
         <div class="container-fluid" style="position: relative;">
             <div class="container" style="height: 70vh;">
-                <div style="width: 100%; height: 60vh;">
-                    <iframe id="slideshow0" class="animate__animated
-                        animate__fast vimeo" style="width: 100%; height: 100%"
-                        src="https://player.vimeo.com/video/419013856"
-                        frameborder="0" ;fullscreen" allowfullscreen></iframe>
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshowk"
+                        class="vimeo" style="width: 100%;
+                        height:
+                        100%" src="https://player.vimeo.com/video/485771121"
+                        frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="up" onclick="pause()">
                     <a href="#vid1">
@@ -124,7 +158,7 @@
                     </a>
                 </div>
                 <div class="bottom" onclick="pause()">
-                    <a href="#title1">
+                    <a href="#titlea">
                         <div class="wrapper">
                             <div class="toggle">
                                 <i class="material-icons" id="char">keyboard_arrow_down</i>
@@ -133,57 +167,30 @@
                         </div>
                     </a>
                 </div>
-                <div class="left" onclick="left(0)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_left</i>
-							<h1 class="slide_text">Prev. Piece</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="right" onclick="right(0)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_right</i>
-							<h1 class="slide_text">Next Piece</h1>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
 
-
-        <!--Grade 9 Drama Block-->
-
-
-        <div id="title1" class="jumbotron text-white bg-dark mt-0 pt-0"
+        <!--Ann Collins Ella & Tina-->
+        <div id="titlea" class="jumbotron text-white bg-dark mt-0 pt-0"
             style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
             calc(100% - 10vh));">
             <div class="container p-2">
-                <h1 class="title">Grade 9 Drama Monologues and Commercials</h1>
-                <p class="paragraph"> For this year’s ISP project, CPC Grade 9 Drama students either chose to write and perform a monologue asking for help, or create an original commercial. Here is a selection!
+                <h1 class="title">The Story of Ann Collins, Collected by Ella Lee-O'Rouke ('21) and Tina</h1>
+                <p class="paragraph">
+				Ann Collins was born November 27,1925 in Nottingham, England. She was only 13 when WWII broke out; it ended her schooling, and sent her to work, and forced her to endure the Blitz and everything else associated with the war. Ann joined the ATS when she was 17; she expressed that her time in the British army was one of the greatest experiences she ever had. Ann was a messenger during the war, carrying top secret messages to different destinations in the London area. During the war, she met a Canadian soldier, and later moved to Canada as a war bride, to begin a new life with her “true love”. Ann is now 95 years old. She has 3 kids and now lives in Sunnybrook Veterans Wing, where Crestwood students interviewed her in January 2020.
                 </p>
             </div>
         </div>
 
         <div class="container-fluid" style="position: relative;">
             <div class="container" style="height: 70vh;">
-                <div style="width: 100%; height: 60vh;">
-                    <iframe id="slideshow1" class="animate__animated vimeo"
-                        style="width: 100%; height: 100%"
-                        src="https://player.vimeo.com/video/419788442"
-                        frameborder="0" ;fullscreen" allowfullscreen></iframe>
-                </div>
-                <div class="bottom" onclick="pause()">
-                    <a href="#title2">
-                        <div class="wrapper">
-                            <div class="toggle">
-                                <i class="material-icons" id="char">keyboard_arrow_down</i>
-								<h1 class="slide_text">Next Block</h1>
-                            </div>
-                        </div>
-                    </a>
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshowk"
+                        class="vimeo" style="width: 100%;
+                        height:
+                        100%" src="https://player.vimeo.com/video/398299310"
+                        frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="up" onclick="pause()">
                     <a href="#title0">
@@ -195,49 +202,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="left" onclick="left(1)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_left</i>
-							<h1 class="slide_text">Prev. Piece</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="right" onclick="right(1)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_right</i>
-							<h1 class="slide_text">Next Piece</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--Grade 10 Drama Block-->
-
-
-        <div id="title2" class="jumbotron text-white bg-dark mt-0 pt-0"
-            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
-            calc(100% - 10vh));">
-            <div class="container p-2">
-                <h1 class="title">Grade 10 Drama Monologues</h1>
-                <p class="paragraph"> The grade 10 Drama class finished their year by applying their learned acting skills and the technique of writing-in-role to present unique monologues. Included is a collection of students’ takes of the various prompts given to them during our process. Thank you for watching and enjoy!
-                </p>
-            </div>
-        </div>
-
-        <div class="container-fluid" style="position: relative;">
-            <div class="container" style="height: 70vh;">
-                <div style="width: 100%; height: 60vh;">
-                    <iframe id="slideshow2" class="animate__animated vimeo"
-                        style="width: 100%; height: 100%"
-                        src="https://player.vimeo.com/video/424995980"
-                        frameborder="0" ;fullscreen" allowfullscreen></iframe>
-                </div>
                 <div class="bottom" onclick="pause()">
-                    <a href="#title6">
+                    <a href="#title1">
                         <div class="wrapper">
                             <div class="toggle">
                                 <i class="material-icons" id="char">keyboard_arrow_down</i>
@@ -246,8 +212,32 @@
                         </div>
                     </a>
                 </div>
+            </div>
+        </div>
+
+        <!--Jay Lu Bert Shinwell-->
+		        <div id="title1" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">The Story of Bert Shinwell, Compiled by Jay Lu ('21)</h1>
+                <p class="paragraph">
+				Bert Shinwell was born in Glasgow, Scotland, on June 28th, 1925. Bert has two sisters and one brother; he was the third child. Unfortunately, the Great Depression took away his father’s job as a tailor. Bert left school at the age of 14 and started working to earn money. When the war came, he and his older brother both enlisted in the war. Bert served in an armoured regiment, and was part of a Sherman tank crew. He and his crew fought their way from Normandy all the way to Germany. When the war ended, Bert came to Canada and met his wife, where the two of them built a life together. Bert is now 95 years old, living in Sunnybrook hospital, where a group of Crestwood students interviewed him in January 2020.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative;">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshowk"
+                        class="vimeo" style="width: 100%;
+                        height:
+                        100%" src="https://player.vimeo.com/video/398979209"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
                 <div class="up" onclick="pause()">
-                    <a href="#title1">
+                    <a href="#titlea">
                         <div class="wrapper">
                             <div class="toggle">
                                 <i class="material-icons" id="char">keyboard_arrow_up</i>
@@ -256,43 +246,42 @@
                         </div>
                     </a>
                 </div>
-                <div class="left" onclick="left(2)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_left</i>
-							<h1 class="slide_text">Prev. Piece</h1>
+                <div class="bottom" onclick="pause()">
+                    <a href="#title2">
+                        <div class="wrapper">
+                            <div class="toggle">
+                                <i class="material-icons" id="char">keyboard_arrow_down</i>
+								<h1 class="slide_text">Next Block</h1>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="right" onclick="right(2)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_right</i>
-							<h1 class="slide_text">Next Piece</h1>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+		
+ <!--Kian  Bob Speedie-->
+		        <div id="title2" class="jumbotron text-white bg-dark mt-0 pt-0"
+            style="height:30vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
+            calc(100% - 10vh));">
+            <div class="container p-2">
+                <h1 class="title">The Story of Bob Speedie, Compiled by Kian Torabi Ardakani ('21)</h1>
+                <p class="paragraph2">
+				Bob Speedie was born in 1926 in Crieff, Scotland. Bob’s father was a building contractor and due to his job, Bob’s family moved to London, England on May 2, 1926; he was 3 months old at that time. He grew up in London as a Cockney and attended the London Public School. Bob was in London until he was 12 years old, when Bob’s father decided that they would move back to Scotland since Hitler had started bombing London. Bob was a boy scout and when he was 18 years old, he joined the British Admiralty Naval Store Department. At first he was transferring supplies from the United States and other places to Britain. But then he was transferred overseas. He has been overseas ever since and has been to many places around the world, including Sydney, Australia during the war.  Bob was interviewed for this project in February 2019, at the Sunnybrook Veterans’ Wing, by Mr. Masters and a group of Crestwood Grade 10 history students.
+                </p>
             </div>
         </div>
 
-        <!--DRAMA PHOTO SLIDE SHOWS-->
-        <div id="title6" class="jumbotron text-white bg-dark mt-0 pt-0"
-            style="height:15vh;clip-path: polygon(0 100%, 0 0, 100% 0, 100%
-            calc(100% - 10vh));">
-            <div class="container p-2">
-                <h1 class="title">Drama at Crestwood Prep</h1>
-            </div>
-        </div>
         <div class="container-fluid" style="position: relative;">
-            <div class="container" style="height: 85vh;">
-                <div class="container" id="img_slideshow0" style="height: 65vh;
-                    background-attachment: relative;
-                    background-size: cover;
-                    background-position: 50% 50%;
-                    background-image: url(img/drama/1.JPG);">
+            <div class="container" style="height: 70vh;">
+                <div style="width: 100%; height: 50vh;">
+                    <iframe id="slideshowk"
+                        class="vimeo" style="width: 100%;
+                        height:
+                        100%" src="https://player.vimeo.com/video/322855044"
+                        frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="up" onclick="pause()">
-                    <a href="#title2">
+                    <a href="#title1">
                         <div class="wrapper">
                             <div class="toggle">
                                 <i class="material-icons" id="char">keyboard_arrow_up</i>
@@ -311,27 +300,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="left" onclick="left_img(0)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_left</i>
-							<h1 class="slide_text">Prev. Photo</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="right" onclick="right_img(0)">
-                    <div class="wrapper">
-                        <div class="toggle">
-                            <i class="material-icons" id="char">keyboard_arrow_right</i>
-							<h1 class="slide_text">Next Photo</h1>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
-
-        <!--NAV-->
+ <!--NAV-->
         <div id="wrap" class="wrapper">
             <div class="toggle" id="toggle" onclick="expand()">
                 <i class="material-icons" id="add">add</i>
@@ -350,13 +322,13 @@
                     <h1 class="item_text">Music</h1>
                 </a>
             </div>
-            <div class="item item_active">
+            <div class="item">
                 <a href="drama.html">
                     <img src="img/logo/drama.png" class="icon">
                     <h1 class="item_text">Drama</h1>
                 </a>
             </div>
-            <div class="item">
+            <div class="item item_active">
                 <a href="remembrance.html">
                     <img src="img/logo/poppy.svg" class="icon">
                     <h1 class="item_text" style="margin-top: -50px;">Remembrance
@@ -376,15 +348,7 @@
                 </a>
             </div>
         </div>
-        <!-- <div id="up">
-        <a id="up_redicrect" href="#title6">
-            <div class="wrapper">
-                <div class="toggle">
-                    <i class="material-icons" id="add">keyboard_arrow_up</i>
-                </div>
-            </div>
-        </a>
-    </div> -->
+        </div>
         <script>
         let open = false;
         let i = document.getElementById("menu").childNodes;
@@ -403,7 +367,7 @@
 
         function expand() {
             if (!open) {
-			    document.getElementById("blurback").style.display = 'block';
+			document.getElementById("blurback").style.display = 'block';
                 document.getElementById("add").style.transform = 'rotate(45deg)';
 
                 document.getElementById("wrap").style.transform = 'translate(' + translateX + ',' + translateY + ') scale(' + zoom + ')';
@@ -486,10 +450,19 @@
                 document.getElementById("navbar").style.display = "none";
             }
         }
+    </script>
+    <script>
+        window.onscroll = function() {
+            if (window.location.hash.includes("title")) {
+                document.getElementById("navbar").style.display = "block";
+            } else {
+                document.getElementById("navbar").style.display = "none";
+            }
+        }
         var slides = [
-            ["https://player.vimeo.com/video/419013856", "https://player.vimeo.com/video/419012817","https://player.vimeo.com/video/424903141", "https://player.vimeo.com/video/419012227","https://player.vimeo.com/video/424903706","https://player.vimeo.com/video/424903280"],
-            ["https://player.vimeo.com/video/419788442", "https://player.vimeo.com/video/419014117", "https://player.vimeo.com/video/419013689", "https://player.vimeo.com/video/419013401", "https://player.vimeo.com/video/419013013", "https://player.vimeo.com/video/419012308", "https://player.vimeo.com/video/419012640", "https://player.vimeo.com/video/419012348", "https://player.vimeo.com/video/419014789"], 
-            ["https://player.vimeo.com/video/424995980","https://player.vimeo.com/video/424996465","https://player.vimeo.com/video/424996067","https://player.vimeo.com/video/424995883","https://player.vimeo.com/video/424995655","https://player.vimeo.com/video/424995349","https://player.vimeo.com/video/424995199","https://player.vimeo.com/video/424994742","https://player.vimeo.com/video/424994695"]
+            ["https://player.vimeo.com/video/422886022", "https://player.vimeo.com/video/422855469", "https://player.vimeo.com/video/422854405", "https://player.vimeo.com/video/422855051", "https://player.vimeo.com/video/422855309", "https://player.vimeo.com/video/422854182", "https://player.vimeo.com/video/422855888", "https://player.vimeo.com/video/422856209","https://player.vimeo.com/video/422856501", "https://player.vimeo.com/video/422855740"],
+			["https://player.vimeo.com/video/424990659","https://player.vimeo.com/video/424899085","https://player.vimeo.com/video/424901257","https://player.vimeo.com/video/424898997"],
+			[]
         ];
         var current = [0, 0, 0, 0, 0];
 
@@ -527,7 +500,7 @@
     </script>
         <script>
         var slides_img = [
-            ["img/drama/15.JPG","img/drama/3.JPG","img/drama/18.JPG","img/drama/5.JPG","img/drama/6.JPG","img/drama/7.JPG","img/drama/10.JPG","img/drama/11.JPG","img/drama/12.JPG","img/drama/13.JPG","img/drama/14.JPG","img/drama/2.JPG","img/drama/16.JPG","img/drama/17.JPG","img/drama/4.JPG","img/drama/19.JPG","img/drama/20.JPG","img/drama/21.JPG","img/drama/22.JPG","img/drama/23.JPG"]
+            ["img/music/2.JPG","img/music/3.JPG","img/music/4.JPG","img/music/5.JPG","img/music/6.JPG","img/music/7.JPG","img/music/8.JPG","img/music/9.JPG","img/music/10.JPG","img/music/11.JPG","img/music/12.JPG","img/music/13.JPG","img/music/14.JPG","img/music/15.JPG","img/music/16.JPG","img/music/17.JPG","img/music/18.JPG","img/music/19.JPG","img/music/20.JPG","img/music/21.JPG","img/music/22.JPG"]
         ];
         var current_img = [0, 0, 0, 0, 0];
 
@@ -572,5 +545,6 @@
         
     </script>
     </body>
+
 
 </html>
