@@ -104,7 +104,9 @@
     <body>
 
         <!-- intro-->
+        <div id = "blurback">
 
+        </div>
         <div class="video-background" id="vid1">
             <iframe class="vimeo"
                 id="intro_vid"
@@ -419,8 +421,8 @@
             <div class="item">
                 <a href="home.html">
                     <img src="img/logo/home.png" class="icon">
+                    <h1 class="item_text">Home</h1>
                 </a>
-                <h1 class="item_text" style="margin-top: -25px;">Home</h1>
             </div>
             <div class="item item_active">
                 <a href="music.html">
@@ -471,6 +473,7 @@
 
         function expand() {
             if (!open) {
+                document.getElementById("blurback").style.display = 'block';
                 document.getElementById("add").style.transform = 'rotate(45deg)';
 
                 document.getElementById("wrap").style.transform = 'translate(' + translateX + ',' + translateY + ') scale(' + zoom + ')';
@@ -485,6 +488,7 @@
                 i[11].style.transform = 'translate(-140px,-80px)';
 
             } else {
+                document.getElementById("blurback").style.display = 'none';
                 document.getElementById("add").style.transform = 'rotate(0deg)';
                 document.getElementById("menu").style.transform = 'scale(0.1)'
                 document.getElementById("wrap").style.transform = 'scale(' + zoom_original + ')';
