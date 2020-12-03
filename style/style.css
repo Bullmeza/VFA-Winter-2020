@@ -66,8 +66,6 @@ body {
     justify-content: center;
 }
 
-
-
 .video-background iframe {
     position: absolute;
     top: 50%;
@@ -109,7 +107,7 @@ body {
         position: absolute;
         background-color: black;
     }
-    #vimeo_vid{
+    #credit_img{
         width: auto; height: 100%;
     }
     #start {
@@ -143,7 +141,7 @@ body {
     .video-background iframe, .video-background #vimeo_vid{
         width: 177.78vh;
     }
-    #vimeo_vid{
+    #credit_img{
         width: 100%; height: auto;
     }
     #start {
