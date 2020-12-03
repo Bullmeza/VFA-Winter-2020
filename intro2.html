@@ -2,6 +2,16 @@
 <html lang="en">
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169025561-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169025561-1');
+</script>
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,16 +47,14 @@
 
 
     <body>
+
         <style>
         body {
-            background-color: #d3d3d3;
+            background-color: #000000;
             overflow: hidden;
         }
     </style>
-        <!-- hi-->
-        <h1 id="start" class='delay-2s animated fadeOut'>A Word From Our Headmaster...</h1>
-
-        <div class="video-background animated fadeIn delay-3s">
+        <div class="video-credits">
             <iframe id="vimeo_vid"
                 src="https://player.vimeo.com/video/486813234?autoplay=1&loop=0&autopause=0"
                 frameborder="0" allow="autoplay; fullscreen" allow="fullscreen"></iframe>
@@ -66,7 +74,7 @@
         <script>
         $(document).ready(function() {
             var iframe = $('#vimeo_vid');
-            var player = new Vimeo.Player();
+            var player = new Vimeo.Player(iframe);
 
             player.on('ended', function() {
                 window.location.replace("home.html");

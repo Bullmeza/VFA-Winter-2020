@@ -2,6 +2,16 @@
 <html lang="en">
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169025561-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169025561-1');
+</script>
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -108,14 +118,11 @@
     <body>
 
 
-<!--intro id-->
 
-        <div class="video-background vimeo" id="vid1">
-            <iframe
-                class="vimeo"
-                id="intro_vid"
-                src="https://player.vimeo.com/video/485764303?autoplay=1&loop=0&autopause=0"
-                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="video-credits" id="vid1">
+                <iframe id="vimeo_vid"
+                    src="https://player.vimeo.com/video/485764303?autoplay=1&loop=0&autopause=0"
+                    frameborder="0" allow="autoplay; fullscreen" allow="fullscreen"></iframe>
         </div>
         <div class="bottom" onclick="pause()" >
             <a href="#title0">
@@ -292,7 +299,7 @@
                         <div class="wrapper">
                             <div class="toggle">
                                 <i class="material-icons" id="char">keyboard_capslock</i>
-								<h1 class="slide_text">Top</h1>
+								<h1 class="slide_text" style="margin-top: -55px;">Top</h1>
                             </div>
                         </div>
                     </a>

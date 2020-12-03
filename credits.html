@@ -2,6 +2,16 @@
 <html lang="en">
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169025561-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169025561-1');
+</script>
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,9 +55,7 @@
         }
     </style>
         <div class="video-credits">
-            <iframe id="vimeo_vid"
-                src="https://player.vimeo.com/video/421240693?autoplay=1&loop=0&autopause=0"
-                frameborder="0" allow="autoplay; fullscreen" allow="fullscreen"></iframe>
+            <img id="vimeo_vid" src="img/Credits.png">
             <div class="right">
                 <a href="home.html">
                     <div class="wrapper">
@@ -58,19 +66,6 @@
                 </a>
             </div>
         </div>
-
-
-
-        <script>
-        $(document).ready(function() {
-            var iframe = $('#vimeo_vid');
-            var player = new Vimeo.Player(iframe);
-
-            player.on('ended', function() {
-                window.location.replace("home.html");
-            });
-        });
-    </script>
     </body>
 
 </html>
